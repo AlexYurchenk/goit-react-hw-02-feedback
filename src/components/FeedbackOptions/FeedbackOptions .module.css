@@ -1,0 +1,15 @@
+.statisticsList {
+  padding: 0;
+  margin: 0%;
+  list-style: none;
+}
+.statisticsItem {
+  margin-bottom: 15px;
+}
+.statisticsItem:last-child {
+  margin-bottom: 0%;
+}
+.statisticsText {
+  font-size: 30px;
+  line-height: 1.5em;
+}
