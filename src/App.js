@@ -40,10 +40,10 @@ class App extends Component {
     return (
       <div>
         <Section title = 'Please leave feedback'>
-            <FeedbackOptions goodIncrement={this.goodIncrement} neutralIncrement={this.neutralIncrement} badIncrement={this.badIncrement} />
+          <FeedbackOptions good={this.goodIncrement} neutral={this.neutralIncrement} bad={this.badIncrement} feedbacks ={['good','neutral','bad'] }/>
         </Section>
         <Section title='Statistic'  >
-            {this.countTotalFeedback() == 0?<h3>no feedback given</h3>:<Statistics good={this.state.good} neutral={this.state.neutral} bad = {this.state.bad} total = {this.countTotalFeedback()} positiveFeedbackPercentage = {this.countPositiveFeedbackPercentage()} />}
+            {this.countTotalFeedback() === 0?<h3>no feedback given</h3>:<Statistics feedbacks ={['good','neutral','bad','total','Positivefeedback']} good={this.state.good} neutral={this.state.neutral} bad = {this.state.bad} total = {this.countTotalFeedback()} Positivefeedback = {this.countPositiveFeedbackPercentage()} />}
         </Section>
       </div>
 
